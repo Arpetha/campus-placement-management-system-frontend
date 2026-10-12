@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f5f7fc;
+color: #202747;
+}
+
+.app {
+min-height: 100vh;
+}
+
+.navbar {
+background: #ffffff;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 2px 12px #17255412;
+}
+
+.navbar h2 {
+margin: 0;
+color: #5145cd;
+}
+
+.navbar nav {
+display: flex;
+gap: 24px;
+flex-wrap: wrap;
+}
+
+.navbar a {
+text-decoration: none;
+color: #343b55;
+font-weight: 600;
+}
+
+.navbar a:hover {
+color: #5145cd;
+}
+
+.hero {
+text-align: center;
+padding: 80px 20px;
+background: linear-gradient(135deg, #5145cd, #8175f5);
+color: white;
+}
+
+.tagline {
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 3px;
+}
+
+.hero h1 {
+max-width: 800px;
+margin: 20px auto;
+font-size: 42px;
+line-height: 1.2;
+}
+
+.hero p {
+line-height: 1.7;
+}
+
+.hero-button {
+display: inline-block;
+margin-top: 20px;
+padding: 13px 25px;
+background: white;
+color: #5145cd;
+text-decoration: none;
+border-radius: 8px;
+font-weight: bold;
+}
+
+.register-section,
+.students-section,
+.jobs-section {
+max-width: 900px;
+margin: 40px auto;
+padding: 30px;
+background: white;
+border-radius: 14px;
+box-shadow: 0 5px 25px #1725540d;
+}
+
+.register-section h2,
+.students-section h2,
+.jobs-section h2 {
+margin-top: 0;
+color: #302b68;
+}
+
+.register-section > p,
+.empty-message {
+color: #727891;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 25px;
+}
+
+label {
+font-weight: bold;
+font-size: 14px;
+}
+
+input,
+select {
+width: 100%;
+padding: 13px;
+border: 1px solid #d9dcec;
+border-radius: 7px;
+font-size: 15px;
+background: white;
+}
+
+input:focus,
+select:focus {
+outline: 2px solid #8175f5;
+border-color: #5145cd;
+}
+
+form button {
+margin-top: 10px;
+padding: 14px;
+border: none;
+border-radius: 7px;
+background: #5145cd;
+color: white;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+form button:hover {
+background: #3930a6;
+}
+
+.table-container {
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+th,
+td {
+padding: 14px;
+border-bottom: 1px solid #e9eaf2;
+text-align: left;
+}
+
+th {
+background: #f0efff;
+color: #302b68;
+}
+
+.job-card {
+padding: 20px;
+margin-top: 18px;
+border: 1px solid #e4e5f2;
+border-radius: 10px;
+background: #fafaff;
+}
+
+.job-card h3 {
+margin-top: 0;
+}
+
+.job-card p {
+color: #656b82;
+line-height: 1.6;
+}
+
+.job-card span {
+color: #5145cd;
+font-size: 13px;
+font-weight: bold;
+}
+
+footer {
+padding: 25px 15px;
+text-align: center;
+background: #202747;
+color: white;
+font-size: 14px;
+}
+
+@media (max-width: 600px) {
+.navbar {
+flex-direction: column;
+gap: 18px;
+}
+
+.navbar nav {
+justify-content: center;
+gap: 15px;
+}
+
+.hero h1 {
+font-size: 30px;
+}
+
+.register-section,
+.students-section,
+.jobs-section {
+margin: 20px 12px;
+padding: 22px;
+}
+}
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px #1725540d;
+}
+
+.section h2 {
+  color: #302b68;
+  margin-top: 0;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+.section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section label {
+  display: block;
+  margin-top: 5px;
+}
+
+.section input,
+.section select {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+}
+
+.section button {
+  margin-top: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 7px;
+  background: #5145cd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .section {
+    margin: 20px 12px;
+    padding: 22px;
+  }
+}
